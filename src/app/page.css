@@ -1,0 +1,616 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes textclip {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.animate-textclip {
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 3s linear infinite;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+}
+
+.pass {
+  padding: 50px 250px;
+  margin-bottom: 0px;
+  background-image: url("https://res.cloudinary.com/wavy/image/upload/v1644489897/marbre-blanc.jpg");
+  background-color: #fff;
+  color: #000;
+}
+
+.bg-or {
+  background-image: url("https://res.cloudinary.com/wavy/image/upload/v1641461956/dor%C3%A9-2.jpg");
+  background-size: cover;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 1px;
+}
+.Banner {
+  background-image: url("https://res.cloudinary.com/wavy/image/upload/f_auto,q_auto,w_1366/v1734700998/production/shop-website-renderer/430897/65cf8f2bfce28bd6055aec54/banner-5ac83f75-f464-4efe-a776-2aaa60cf2c2a.bannercpid.jpg");
+  opacity: 0;
+  opacity: 1;
+}
+
+@media(max-width: 767px) {
+  .Banner {
+      background-image:url("https://res.cloudinary.com/wavy/image/upload/f_auto,q_auto,h_1100/v1734701000/production/shop-website-renderer/430897/65cf8f2bfce28bd6055aec54/banner-a25b7686-a18f-484f-b3ce-673a1af04791.bannermobilecpid.jpg")
+  }
+}
+.LinkPanel--services--background {
+  background-image: url("https://res.cloudinary.com/wavy/image/upload/f_auto,q_auto/v1708595752/production/shop-website-renderer/430897/65cf8f2bfce28bd6055aec54/linkpanel-4d107bfc-4de8-409a-9f8e-0bc01e8ac0bf.servicesimage.jpg")
+}
+
+@media(max-width: 767px) {
+  .LinkPanel--services--background {
+      background-image:url("https://res.cloudinary.com/wavy/image/upload/f_auto,q_auto/v1708595752/production/shop-website-renderer/430897/65cf8f2bfce28bd6055aec54/linkpanel-4d107bfc-4de8-409a-9f8e-0bc01e8ac0bf.servicesimage.jpg")
+  }
+}
+.LinkPanel--contact--background {
+  background-image: url("https://res.cloudinary.com/wavy/image/upload/f_auto,q_auto/v1708595749/production/shop-website-renderer/430897/65cf8f2bfce28bd6055aec54/linkpanel-b893efd1-b6c5-466f-a6c6-9149cf70e8f3.contactimage.jpg")
+}
+
+@media(max-width: 767px) {
+  .LinkPanel--contact--background {
+      background-image:url("https://res.cloudinary.com/wavy/image/upload/f_auto,q_auto/v1708595749/production/shop-website-renderer/430897/65cf8f2bfce28bd6055aec54/linkpanel-b893efd1-b6c5-466f-a6c6-9149cf70e8f3.contactimage.jpg")
+  }
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Libre Caslon Text",serif
+}
+a {
+  color: #7b6a58;
+}
+
+.background-color-1-faded {
+  background-color: rgba(123, 106, 88, 0.15000000000000002)!important;
+  color: #333
+}
+
+.color-1,.color-1-hover:hover,.color-1-hover:focus,a {
+  color: #7b6a58
+}
+
+.background-color-1,.background-color-1-hover:hover,.background-color-1-hover:focus {
+  background-color: #7b6a58
+}
+
+.border-color-1 {
+  border-color: #7b6a58!important
+}
+
+.background-color-1-faded.is-on-a-coloured-parent {
+  background-color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.background-color-1-faded-hover:hover,.background-color-1-faded-hover:focus {
+  background-color: rgba(123, 106, 88, 0.7)!important
+}
+
+.color-3 {
+  color: #ffffff
+}
+
+.color-3-hover:hover {
+  color: #ffffff
+}
+
+.background-color-3,.background-color-3-hover:hover,.background-color-3-hover:focus,body {
+  background-color: #ffffff
+}
+
+.background-color-3-whiten {
+  background-color: rgb(255, 255, 255)
+}
+
+.border-color-3 {
+  border-color: #ffffff
+}
+
+.color-4,.color-4-hover:hover,.color-4-hover:focus,body {
+  color: black
+}
+
+.color-4-faded {
+  color: rgba(0, 0, 0, 0.7)
+}
+
+.background-color-4,.background-color-4-hover:hover,.background-color-4-hover:focus {
+  background-color: black
+}
+
+.background-color-4-faded,.background-color-4-faded-hover:hover,.background-color-4-faded-hover:focus {
+  background-color: rgba(0, 0, 0, 0.30000000000000004)
+}
+
+.border-color-4 {
+  border-color: black
+}
+
+.border-color-4-faded {
+  border-color: rgba(0, 0, 0, 0.30000000000000004)
+}
+
+.box-shadow-4 {
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),0 1px 2px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),0 1px 2px rgba(0, 0, 0, 0.24)
+}
+
+button.BookingButton {
+  background-image: url("https://res.cloudinary.com/wavy/image/upload/v1641461956/dor%C3%A9-2.jpg");
+  background-size: cover;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.CustomButtons--button {
+  background-image: url("https://res.cloudinary.com/wavy/image/upload/v1641461956/dor%C3%A9-2.jpg");
+  background-size: cover;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.MainInfoBar--box.is-cta {
+  background-image: url("https://res.cloudinary.com/wavy/image/upload/v1641461956/dor%C3%A9-2.jpg");
+  background-size: cover;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.Footer {
+  padding: 32px 40px;
+  background-color: #0f0f0f;
+  background-image: url("https://res.cloudinary.com/wavy/image/upload/v1642762903/marbre-noir.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.fa-times:before {
+  content: "";
+  color: #ddd;
+}
+
+.fa-bars:before {
+  content: "";
+  color: #87613d;
+}
+
+.NavBar--list {
+  background-color: #000!important;
+}
+
+a.NavBar--item-link {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #87613d !important;
+}
+
+.CustomMarkdown--Cols.col-1.InfosShop--Cols {
+  padding: 10px 10px;
+  margin-bottom: 0px;
+  background-image: url("https://res.cloudinary.com/wavy/image/upload/v1644489897/marbre-blanc.jpg");
+  background-color: #fff;
+  color: #000;
+}
+
+.CustomMarkdown--Cols.col-1 {
+  padding: 10px 10px;
+  text-align: center;
+  background-color: #000;
+  margin-top: -16px;
+  color: #fff;
+}
+
+.CustomMarkdown p {
+  line-height: 23px;
+  text-align: justify;
+  font-size: 14.5px;
+}
+
+.CustomMarkdown ul {
+  line-height: 23px;
+  text-align: justify;
+  font-size: 13px;
+}
+
+.CustomMarkdown h2 {
+  font-size: 24px;
+  letter-spacing: 0px;
+  font-weight: 100;
+  margin-top: 19px;
+  line-height: 36px;
+  color: #484848;
+  text-align: center;
+}
+
+.CustomMarkdown h3 {
+  letter-spacing: 0px;
+  font-weight: 100;
+  margin-top: 19px;
+  line-height: 33px;
+  color: #484848;
+  text-align: center;
+}
+
+.CustomMarkdown h4 {
+  font-size: 18px;
+  letter-spacing: 0px;
+  font-weight: 100;
+  margin-top: 19px;
+  line-height: 33px;
+  color: #000;
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+}
+
+.CustomMarkdown h5 {
+  letter-spacing: 1px;
+  font-size: 14px;
+  line-height: 23px;
+  margin: 20px auto;
+  text-transform: uppercase;
+  border-radius: 4px;
+  text-align: center;
+  background-color: #e3d7ce87;
+  padding: 4px;
+  font-family: 'Rubik', sans-serif;
+  background-image: url("https://res.cloudinary.com/wavy/image/upload/v1641461956/dor%C3%A9-2.jpg");
+  background-size: cover;
+}
+
+.CustomMarkdown img {
+  max-width: 100%;
+  box-sizing: border-box;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  opacity: 1;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+img:hover {
+  opacity: .5;
+}
+
+.Section--title.left {
+  text-align: center;
+}
+
+ul.NavBar--list.background-color-1.color-3 {
+  background-color: white;
+}
+
+.Footer--group--title {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.Team--thumbnail {
+  width: 100px;
+  height: 100px;
+}
+
+.CookieBar {
+  color: white;
+  background-color: black;
+  font-size: 13px;
+}
+
+.box-shadow-4 {
+  box-shadow: 0 1px 1px rgba(212, 212, 212, 0.12), 0 1px 1px rgba(222, 222, 222, 0.24);
+}
+
+span.fa.fa-times {
+  color: black;
+}
+
+strong.Banner--tagline {
+  font-size: 16px!important;
+  font-weight: 100;
+  letter-spacing: 0.5px;
+  margin: 0px auto;
+  color: #fff;
+  width: 320px;
+  line-height: 23px;
+  font-family: 'Rubik', sans-serif;
+}
+
+h1.Banner--title {
+  text-align: center;
+  background-image: linear-gradient( -225deg, #000 0%, #d5c381 29%, #000 67%, #d5c381 100% );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 3s linear infinite;
+  font-size: 2.5em;
+  letter-spacing: 3px;
+  /* text-shadow: 1px 1px 5px #000;*/
+}
+
+@keyframes textclip {
+  to {
+      background-position: 200% center;
+  }
+}
+
+.InfosShop h2 {
+  font-size: 25px;
+  letter-spacing: 2px;
+  font-weight: 100;
+  margin-top: 19px;
+  line-height: 36px;
+  color: #7b6a58;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.InfosShop h3 {
+  letter-spacing: 1px;
+  font-weight: 100;
+  margin-top: 19px;
+  line-height: 47px;
+  color: #7b6a58;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.InfosShop h4 {
+  font-size: 16px;
+  letter-spacing: 5px;
+  font-weight: 100;
+  margin-top: 19px;
+  line-height: 33px;
+  color: #cbbba1;
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+  text-transform: uppercase;
+}
+
+.InfosShop h5 {
+  letter-spacing: 1px;
+  font-size: 14px;
+  line-height: 23px;
+  margin: 20px auto;
+  text-transform: uppercase;
+  border-radius: 4px;
+  text-align: center;
+  background-color: #e3d7ce87;
+  padding: 4px;
+  font-family: 'Rubik', sans-serif;
+}
+
+a.NavBar--item-link.color-3.color-4-hover {
+  color: black;
+}
+
+button.CookieBar--close-button {
+  background-color: black;
+  color: white;
+}
+
+.ContactForm--title {
+  margin: 50px 0;
+  font-size: 23px;
+  font-weight: 100;
+  color: #484848;
+  line-height: 33px;
+}
+
+.Section--title {
+  margin: 80px auto;
+  font-size: 20px;
+  font-weight: 100;
+  color: #484848;
+  line-height: 33px;
+}
+
+h2.Testimonials--title {
+  font-size: 30px;
+  text-align: left;
+}
+
+.LinkPanel--button {
+  padding: 10px 35px;
+  font-size: 11.5px;
+  letter-spacing: 1px;
+}
+
+h4.LinkPanel--title {
+  font-size: 15px;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px #000;
+  margin-top: 80px;
+  font-family: 'Rubik', sans-serif;
+}
+
+a.LinkPanel--button {
+  color: white;
+}
+
+.InfosShop p {
+  line-height: 23px;
+  text-align: justify;
+  font-size: 14.5px;
+  color: #87613d !important;
+}
+
+.InfosShop ul {
+  line-height: 23px;
+  text-align: justify;
+  font-size: 13px;
+  color: #87613d !important;
+}
+
+p.News--message {
+  text-align: left;
+  line-height: 23px;
+  font-size: 14.5px;
+}
+
+.LinkPanel--background {
+  margin-top: 150px;
+}
+
+.Team--member-name {
+  text-align-last: center;
+}
+
+.Team--member-short {
+  margin: 8px 0 0;
+  font-size: 1.1em;
+  text-align-last: center;
+}
+
+button.color-4.background-color-1.background-color-1-faded-hover.Services--booking-button {
+  color: white;
+}
+
+body {
+  /* font-size: 13px; */
+  color: #7b6a58
+}
+
+strong {
+  color: #87613d;
+}
+
+.Footer--contact--item {
+  color: white;
+}
+
+a.SocialMediaLinks--link.Footer--social--link {
+  background-color: white;
+}
+
+.MainInfoBar {
+  margin: 0px auto 0;
+}
+
+@media (min-width: 768px) {
+  .InfosShop {
+      padding-right:0px;
+      padding-left: 0px;
+  }
+
+  h1.Banner--title {
+      margin-left: 0px;
+      margin-top: 0px;
+  }
+
+  .LinkPanel--background {
+      margin-top: 150px;
+      height: 580px;
+      background-size: cover;
+      background-attachment: fixed;
+  }
+
+  .Banner {
+      height: 580px;
+  }
+
+  .LinkPanel--button {
+      padding: 10px 35px;
+      font-size: 11.5px;
+      letter-spacing: 1px;
+      margin-right: 450px;
+  }
+
+  h4.LinkPanel--title {
+      margin-right: 450px;
+      font-size: 18px;
+      color: #fff;
+      font-weight: 100;
+      text-shadow: 1px 1px 5px #000;
+      margin-top: 0px;
+      font-family: 'Rubik', sans-serif;
+  }
+
+  .MainInfoBar {
+      margin: -40px auto 0;
+  }
+
+  .Banner.is-small {
+      height: 450px;
+  }
+
+  .CustomMarkdown--Cols.col-1.InfosShop--Cols {
+      padding: 50px 250px;
+      margin-bottom: 0px;
+      background-image: url("https://res.cloudinary.com/wavy/image/upload/v1644489897/marbre-blanc.jpg");
+      background-color: #fff;
+      color: #000;
+  }
+
+  .CustomMarkdown--Cols.col-1 {
+      padding: 51px 250px;
+      text-align: center;
+      background-color: #000;
+      margin-top: -16px;
+      color: #7b6a58;
+  }
+
+  .LinkPanel--background {
+      margin-top: 150px;
+      height: 550px;
+  }
+
+  .CustomMarkdown--Cols.col-2 {
+      margin: 80px 100px;
+      text-align: justify;
+  }
+
+  .CustomMarkdown--Cols.col-5 {
+      padding: 10px 100px;
+      text-align: justify;
+      background-color: #d9d3c338;
+      margin-bottom: 0px;
+  }
+
+  .CustomMarkdown--Cols.col-6 {
+      padding: 10px 100px;
+      text-align: justify;
+      background-color: #d9d3c338;
+      margin-bottom: 0px;
+  }
+
+  .CustomMarkdown--Cols.col-2 .CustomMarkdown--Col {
+      width: 50%;
+      padding-left: 30px;
+      padding-right: 30px;
+  }
+
+  h2.Section--title {
+      width: 450px;
+  }
+}
