@@ -1,17 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import "@/app/page.css";
-import {
-  Heart,
-  Star,
-  Clock,
-  MapPin,
-  Phone,
-  Mail,
-  Instagram,
-  Facebook,
-  BookText as TikTok,
-} from "lucide-react";
+import Image from "next/image";
 export default function Navbar() {
 
   return (
@@ -20,7 +10,7 @@ export default function Navbar() {
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex justify-between items-center h-20">
             <a className="NavBar--item-link color-4 color-1-hover" href="/">
-              <img
+              <Image
                 alt="17th Beauty"
                 src="https://res.cloudinary.com/wavy/image/upload/f_auto,q_auto,h_288/v1710508584/production/shop-website-renderer/430897/65cf8f2bfce28bd6055aec54/logocpid-1717f90a-ec0d-4fab-958b-5aef99f087af.jpg"
                 decoding="async"
@@ -61,13 +51,13 @@ export default function Navbar() {
       </nav> */}
       <nav className="bg-black fixed z-50 w-full border-gray-200 dark:bg-gray-900">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
-          <img
+          <Image
             alt="17th Beauty"
             src="https://res.cloudinary.com/wavy/image/upload/f_auto,q_auto,h_288/v1710508584/production/shop-website-renderer/430897/65cf8f2bfce28bd6055aec54/logocpid-1717f90a-ec0d-4fab-958b-5aef99f087af.jpg"
             decoding="async"
             width={140}
             data-nimg="fill"
-          ></img>
+          />
           <button
             data-collapse-toggle="navbar-default"
             type="button"
@@ -92,12 +82,12 @@ export default function Navbar() {
               />
             </svg>
           </button>
-          <div class="hidden w-full m:block md:w-auto" id="navbar-default">
-            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <div className="hidden w-full m:block md:w-auto" id="navbar-default">
+            <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
               <li>
                 <a
                   href="#"
-                  class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                  className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
                   aria-current="page"
                 >
                   Home
@@ -106,7 +96,7 @@ export default function Navbar() {
               <li>
                 <a
                   href="#"
-                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   About
                 </a>
@@ -114,7 +104,7 @@ export default function Navbar() {
               <li>
                 <a
                   href="#"
-                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   Services
                 </a>
@@ -122,7 +112,7 @@ export default function Navbar() {
               <li>
                 <a
                   href="#"
-                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   Pricing
                 </a>
@@ -130,7 +120,7 @@ export default function Navbar() {
               <li>
                 <a
                   href="#"
-                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   Contact
                 </a>

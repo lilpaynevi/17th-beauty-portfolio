@@ -1,9 +1,9 @@
 import Navbar from "@/components/global/Navbar";
 import React from "react";
 import { ParallaxScroll } from "@/components/ui/parallax-scroll";
-import { comments, slides } from "@/lib/utils";
+import {  slides } from "@/lib/utils";
 export default function Photos() {
-  const images = [];
+  
 
   return (
     <div>

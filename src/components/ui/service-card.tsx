@@ -1195,7 +1195,7 @@ export default function ServiceCard() {
                       <div className="Services--label--container">
                         <div className="Services--title--wrapper">
                           <span className="Services--label">
-                            Pose d'ongles avec chablon + Vernis semi permanent
+                            {`Pose d'ongles avec chablon + Vernis semi permanent`}
                           </span>
                           <span className="Services--description color-4-faded"></span>
                         </div>

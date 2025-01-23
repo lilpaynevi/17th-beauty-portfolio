@@ -1,26 +1,14 @@
 import Image from "next/image";
 import {
-  Heart,
-  Star,
-  Clock,
-  MapPin,
-  Phone,
-  Mail,
   Instagram,
-  Facebook,
   BookText as TikTok,
 } from "lucide-react";
 import "./page.css";
-import { HeroHighlight } from "@/components/ui/hero-highlight";
-import Carousel from "@/components/ui/carousel";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
-import { comments, testimonials } from "@/lib/utils";
+import { comments } from "@/lib/utils";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
-import ReviewsSection from "@/components/ui/ReviewSection";
-import Link from "next/link";
 import Header from "@/components/global/Header";
 import Navbar from "@/components/global/Navbar";
-import { slides } from "@/lib/utils";
 export default function Home() {
 
   return (
@@ -37,20 +25,22 @@ export default function Home() {
           <span className="text-xl text-[#7b6a58]">
             Le salon de beauté parisien par excellence !
           </span>
-          <img
+          <Image
             src="https://res.cloudinary.com/wavy/image/upload/f_auto,q_auto/v1667380977/golden_hr.svg"
             alt="17th Beauty"
-          ></img>
+            width={500}
+            height={100}
+          />
           <span className="text-xl text-[#7b6a58]">
             Vous cherchez un salon de coiffure à proximité de chez vous...
           </span>
           <div className="text-xl my-5">
             <span className="text-xl text-[#7b6a58] my-4">
-              <strong>17th Beauty</strong> est bien plus qu'un simple{" "}
-              <strong>institut de beauté</strong>, c'est un véritable temple
-              dédié à la sophistication et à l'excellence ! Niché entre la
+              <strong>17th Beauty</strong> est bien plus qu &lsquo; un simple{" "}
+              <strong>institut de beauté</strong>, c &lsquo; est un véritable temple
+              dédié à la sophistication et à l &lsquo; excellence ! Niché entre la
               majestueuse <strong>place de Wagram</strong> et la charmante{" "}
-              <strong>porte d'Asnières</strong> à proximité de l'avenue des{" "}
+              <strong>porte d &lsquo; Asnières</strong> à proximité de l &lsquo; avenue des{" "}
               <strong>Champs-Elysées</strong>. Cet{" "}
               <strong>havre de beauté</strong> se trouve à quelques pas
               seulement{" "}
@@ -66,8 +56,8 @@ export default function Home() {
           <div className="text-xl text-[#7b6a58]">
             <p>
               <span className="text-xl text-[#7b6a58]">
-                C'est ici, que <strong>Selma</strong> vous ouvre les portes d'un
-                monde où la beauté est élevée au rang d'art. Laissez-vous choyer
+                C &lsquo; est ici, que <strong>Selma</strong> vous ouvre les portes d &lsquo; un
+                monde où la beauté est élevée au rang d &lsquo; art. Laissez-vous choyer
                 dans un cadre enchanteur, où chaque détail est pensé pour{" "}
                 <strong>sublimer vos mains, vos pieds, vos cheveux</strong>...
               </span>
@@ -87,16 +77,18 @@ export default function Home() {
       </div>
 
       <p>
-        <img
+        <Image
           src="https://res.cloudinary.com/wavy/image/upload/f_auto,q_auto/v1709107552/SHAY_BEAUTY_bandeau_contenu.jpg"
           alt="17th Beauty"
+          width={500}
+          height={100}
         />
       </p>
       <ul className="CustomMarkdown--Cols col-1 text-[#7b6a58]">
         <li className="CustomMarkdown--Col">
           <p>
-            Laissez-vous enchanter par un univers de raffinement et d'élégance
-            contemporaine, où le marbre s'associe à une ambiance raffinée pour
+            Laissez-vous enchanter par un univers de raffinement et d &lsquo; élégance
+            contemporaine, où le marbre s &lsquo; associe à une ambiance raffinée pour
             un moment de beauté mémorable. Un espace où chaque trait est
             méticuleusement façonné,{" "}
             <strong>
@@ -106,11 +98,11 @@ export default function Home() {
             résolu avec une précision experte !
           </p>
           <p>
-            Être belle jusqu'au bout des ongles, c'est ce que vous propose
-            l'équipe <strong>17th Beauty</strong>&nbsp;! Explorez une palette de
+            Être belle jusqu &lsquo; au bout des ongles, c &lsquo; est ce que vous propose
+            l &lsquo; équipe <strong>17th Beauty</strong>&nbsp;! Explorez une palette de
             services exquis, allant de{" "}
             <strong>
-              l'onglerie, la manucure et la pédicure au maquillage, en passant
+              l &lsquo; onglerie, la manucure et la pédicure au maquillage, en passant
               par le lissage et les soins capillaires
             </strong>
             , pour une chevelure lisse et éclatante de santé.
@@ -120,7 +112,7 @@ export default function Home() {
             <strong>
               des prothésistes ongulaires et esthéticiennes polyvalentes
             </strong>
-            &nbsp;dans un lieu où l'on se sent bien&nbsp;!
+            &nbsp;dans un lieu où l &lsquo; on se sent bien&nbsp;!
           </p>
         </li>
       </ul>
@@ -136,7 +128,7 @@ export default function Home() {
               lineHeight: "33px",
               color: "#cbbba1",
               textAlign: "center",
-              fontFamily: "'Rubik', sans-serif",
+              fontFamily: " &lsquo; Rubik &lsquo; , sans-serif",
               textTransform: "uppercase",
             }}
           >
@@ -182,17 +174,21 @@ export default function Home() {
             </div>
           </h5>
           <p>
-            <img
+            <Image
               src="https://res.cloudinary.com/wavy/image/upload/f_auto,q_auto/v1708596973/-Shay_Beauty-Shay_Beauty.jpg"
               alt="17th Beauty"
+              width={500}
+              height={100}
             />
           </p>
         </div>
         <div className="m-3 text-start">
           <p>
-            <img
+            <Image
               src="https://res.cloudinary.com/wavy/image/upload/f_auto,q_auto/v1708597500/Shay_Beauty-Shay_Beauty.jpg"
               alt="Shay Beauty"
+              width={500}
+              height={100}
             />
           </p>
           <h3 className="text-4xl text-center m-6">
@@ -207,7 +203,7 @@ export default function Home() {
               lineHeight: "33px",
               color: "#cbbba1",
               textAlign: "center",
-              fontFamily: "'Rubik', sans-serif",
+              fontFamily: " &lsquo; Rubik &lsquo; , sans-serif",
               textTransform: "uppercase",
             }}
           >
@@ -283,41 +279,51 @@ export default function Home() {
       <div className="CustomMarkdown--Cols col-5 flex flex-col xl:flex-row">
         <li className="CustomMarkdown--Col">
           <p>
-            <img
+            <Image
               src="https://res.cloudinary.com/wavy/image/upload/f_auto,q_auto/v1657207988/G%C3%A9ny-Relook-icone2.png"
               alt="17th Beauty"
+              width={500}
+              height={100}
             />
           </p>
         </li>
         <li className="CustomMarkdown--Col">
           <p>
-            <img
+            <Image
               src="https://res.cloudinary.com/wavy/image/upload/f_auto,q_auto/v1657208163/G%C3%A9ny-Relook-icone5.png"
               alt="17th Beauty"
+              width={500}
+              height={100}
             />
           </p>
         </li>
         <li className="CustomMarkdown--Col">
           <p>
-            <img
+            <Image
               src="https://res.cloudinary.com/wavy/image/upload/f_auto,q_auto/v1657207989/G%C3%A9ny-Relook-icone3.png"
               alt="17th Beauty"
+              width={500}
+              height={100}
             />
           </p>
         </li>
         <li className="CustomMarkdown--Col">
           <p>
-            <img
+            <Image
               src="https://res.cloudinary.com/wavy/image/upload/f_auto,q_auto/v1657208163/G%C3%A9ny-Relook-icone4.png"
               alt="17th Beauty"
+              width={500}
+              height={100}
             />
           </p>
         </li>
         <li className="CustomMarkdown--Col">
           <p>
-            <img
+            <Image
               src="https://res.cloudinary.com/wavy/image/upload/f_auto,q_auto/v1657207988/G%C3%A9ny-Relook-icone1.png"
               alt="17th Beauty"
+              width={500}
+              height={100}
             />
           </p>
         </li>
@@ -330,7 +336,7 @@ export default function Home() {
             <strong>une multitude de nuances de vernis semi-permanent</strong>{" "}
             vous attendent ! Laissez-vous choyer avec la célèbre{" "}
             <strong>manucure russe</strong>, qui prend soin de vos ongles en les
-            nourrissant et en les préparant avec soin avant l'application{" "}
+            nourrissant et en les préparant avec soin avant l &lsquo; application{" "}
             <strong>de gel ou de chablon</strong>. Quelle que soit votre envie,
             ici, on vous propose <strong>le nail art</strong>,{" "}
             <strong>la french classique</strong>,{" "}
@@ -343,8 +349,8 @@ export default function Home() {
             toutes les fantaisies sont possibles !
           </p>
           <p>
-            C'est ici, que Selma vous ouvre les portes d'un monde où la beauté
-            est élevée au rang d'art. Laissez-vous choyer dans un cadre
+            C &lsquo; est ici, que Selma vous ouvre les portes d &lsquo; un monde où la beauté
+            est élevée au rang d &lsquo; art. Laissez-vous choyer dans un cadre
             enchanteur, où chaque détail est pensé pour{" "}
             <strong>sublimer vos mains, vos pieds, vos cheveux</strong>...
           </p>
@@ -367,11 +373,11 @@ export default function Home() {
               lineHeight: "33px",
               color: "#cbbba1",
               textAlign: "center",
-              fontFamily: "'Rubik', sans-serif",
+              fontFamily: " &lsquo; Rubik &lsquo; , sans-serif",
               textTransform: "uppercase",
             }}
           >
-            Laissez-vous aller, le temps d'une parenthèse de douceur chez{" "}
+            Laissez-vous aller, le temps d &lsquo; une parenthèse de douceur chez{" "}
             <strong>17th Beauty</strong>. Ici, chaque visite est une expérience
             beauté personnalisée !
           </h4>
@@ -381,24 +387,28 @@ export default function Home() {
       <ul className="CustomMarkdown--Cols col-5 grid grid-cols-5">
         <li className="CustomMarkdown--Col m-4">
           <p>
-            <img
+            <Image
               src="https://res.cloudinary.com/wavy/image/upload/f_auto,q_auto/v1708591672/Shay_Beauty-marques_2.png"
               alt="Shay Beauty"
+              width={500}
+              height={100}
             />
           </p>
           <p>
             La marque <strong>Daisy DND</strong> est une entreprise spécialisée
             dans la création de produits de beauté naturels et respectueux de
-            l'environnement. Elle propose une gamme variée de cosmétiques, de
+            l &lsquo; environnement. Elle propose une gamme variée de cosmétiques, de
             soins du visage et du corps, et de parfums, tous fabriqués à partir
-            d'ingrédients d'origine végétale.
+            d &lsquo; ingrédients d &lsquo; origine végétale.
           </p>
         </li>
         <li className="CustomMarkdown--Col m-4">
           <p>
-            <img
+            <Image
               src="https://res.cloudinary.com/wavy/image/upload/f_auto,q_auto/v1708591672/Shay_Beauty-marques_1.png"
               alt="Shay Beauty"
+              width={500}
+              height={100}
             />
           </p>
           <p>
@@ -411,9 +421,11 @@ export default function Home() {
         </li>
         <li className="CustomMarkdown--Col m-4">
           <p>
-            <img
+            <Image
               src="https://res.cloudinary.com/wavy/image/upload/f_auto,q_auto/v1708591671/Shay_Beauty-marques_3.png"
               alt="Shay Beauty"
+              width={500}
+              height={100}
             />
           </p>
           <p>
@@ -426,9 +438,11 @@ export default function Home() {
         </li>
         <li className="CustomMarkdown--Col m-4">
           <p>
-            <img
+            <Image
               src="https://res.cloudinary.com/wavy/image/upload/f_auto,q_auto/v1708591671/Shay_Beauty-marques_5.png"
               alt="Shay Beauty"
+              width={500}
+              height={100}
             />
           </p>
           <p>
@@ -442,9 +456,11 @@ export default function Home() {
         </li>
         <li className="CustomMarkdown--Col m-4 ">
           <p>
-            <img
+            <Image
               src="https://res.cloudinary.com/wavy/image/upload/f_auto,q_auto/v1708591672/Shay_Beauty-marques_4.png"
               alt="Shay Beauty"
+              width={500}
+              height={100}
             />
           </p>
           <p>
@@ -467,7 +483,7 @@ export default function Home() {
             lineHeight: "33px",
             color: "#cbbba1",
             textAlign: "center",
-            fontFamily: "'Rubik', sans-serif",
+            fontFamily: " &lsquo; Rubik &lsquo; , sans-serif",
             textTransform: "uppercase",
           }}
         >
@@ -481,9 +497,11 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img
+                <Image
                   src="https://res.cloudinary.com/wavy/image/upload/f_auto,q_auto,w_80,h_80,c_scale/v1709805452/Best-Cut-INSTA.png"
                   alt="Foo"
+                  width={100}
+                  height={100}
                 />
               </a>
             </p>
@@ -496,9 +514,11 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img
+                <Image
                   src="https://res.cloudinary.com/wavy/image/upload/f_auto,q_auto,w_80,h_80,c_scale/v1650896265/TIKTOK.png"
                   alt="Foo"
+                  width={100}
+                  height={100}
                 />
               </a>
             </p>
@@ -508,9 +528,11 @@ export default function Home() {
       <div className="flex flex-col items-center bg-black justify-center p-5">
         <div className="CustomMarkdown--Col">
           <p>
-            <img
+            <Image
               src="https://res.cloudinary.com/wavy/image/upload/f_auto,q_auto/v1710508753/Logo_principal_17th_Beauty_Colors_fond_noir2.jpg"
               alt="Shay Beauty"
+              width={500}
+              height={100}
             />
           </p>
         </div>
@@ -540,7 +562,7 @@ export default function Home() {
             </p>
           </div>
           <div>
-            <h4 className="font-semibold mb-4">Horaires d'ouverture</h4>
+            <h4 className="font-semibold mb-4">Horaires d &lsquo; ouverture</h4>
             <ul className="space-y-2 text-gray-400">
               <li>Lundi - Vendredi: 10h - 19h</li>
               <li>Samedi: 10h - 19h</li>
