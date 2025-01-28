@@ -16,16 +16,19 @@ export default function Header() {
             src="https://res.cloudinary.com/wavy/image/upload/f_auto,q_auto,w_1366/v1734700998/production/shop-website-renderer/430897/65cf8f2bfce28bd6055aec54/banner-5ac83f75-f464-4efe-a776-2aaa60cf2c2a.bannercpid.jpg"
             alt="17th Beauty"
             className="w-full h-[580px] object-cover"
+            width={100}
+            height={100}
           />
           <div className="absolute inset-0 bg-black/40"></div>
         </div>
 
         <div className="p-14 relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
-          <p className="mt-12 p-12 text-white/90 text-xl mb-8 max-w-2xl mx-auto text-center bg-gradient-to-r from-black via-[#d5c381] to-black bg-clip-text text-transparent animate-textclip shadow-md text-2.5xl tracking-wide">
+          <div className="mt-12 p-12 text-white/90 text-xl mb-8 max-w-2xl mx-auto text-center bg-gradient-to-r from-black via-[#d5c381] to-black bg-clip-text text-transparent animate-textclip shadow-md text-2.5xl tracking-wide">
             <h2 className="text-5xl font-serif text-white mb-6">17th Beauty</h2>
-            Salon de coiffure et d &lsquo; onglerie à Paris <br /> 196 Boulevard
+           <p> Salon de coiffure et d &lsquo; onglerie à Paris <br /> 196 Boulevard
             Malesherbes (75017)
           </p>
+          </div>
           <a
             href="https://widget.treatwell.fr/salon/shay-beauty-2/"
             target="_blank"

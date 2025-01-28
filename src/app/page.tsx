@@ -76,16 +76,16 @@ export default function Home() {
         </div>
       </div>
 
-      <p>
+      <div style={{ width: '100%', position: 'relative', height: '300px' }}>
         <Image
           src="https://res.cloudinary.com/wavy/image/upload/f_auto,q_auto/v1709107552/SHAY_BEAUTY_bandeau_contenu.jpg"
           alt="17th Beauty"
-          width={500}
-          height={100}
+          fill
+          style={{ objectFit: 'cover' }}
         />
-      </p>
+      </div>
       <ul className="CustomMarkdown--Cols col-1 text-[#7b6a58]">
-        <li className="CustomMarkdown--Col">
+        <li className="CustomMarkdown--Col my-8">
           <p>
             Laissez-vous enchanter par un univers de raffinement et d &lsquo; élégance
             contemporaine, où le marbre s &lsquo; associe à une ambiance raffinée pour
@@ -214,32 +214,32 @@ export default function Home() {
               Les prestations capillaires incluent également :
             </p>
             <ul className="list-disc">
-              <li className="ml-12">
+              <li className="ml-12 my-4">
                 Brushing : pour un look lisse et sophistiqué, un brushing
                 impeccable donne à vos cheveux une finition soyeuse et
                 brillante.
               </li>
-              <li className="ml-12">
+              <li className="ml-12 my-4">
                 Mèches : des mèches fines ou des mèches plus marquées, ajoutent
                 de la dimension et de la profondeur à votre couleur de base.
               </li>
-              <li className="ml-12">
+              <li className="ml-12 my-4">
                 Ombre Hair : Cette technique de dégradé subtil, allant des
                 racines foncées aux pointes plus claires, crée un effet naturel
                 et ensoleillé.
               </li>
-              <li className="ml-12">
+              <li className="ml-12 my-4">
                 Balayage : offrant un éclat naturel, le balayage illumine votre
                 chevelure avec des touches de lumière délicates, pour un effet «
                 retour de vacances ».
               </li>
-              <li className="ml-12">
+              <li className="ml-12 my-4">
                 Couleur et coloration : que vous souhaitiez raviver votre
                 couleur actuelle ou adopter une nouvelle teinte, ici on
                 personnalise chaque coloration pour un résultat vibrant et
                 durable.
               </li>
-              <li className="ml-12">
+              <li className="ml-12 my-4">
                 Brillance des cheveux : des soins spécifiques qui apportent une
                 brillance éclatante à vos cheveux, les laissant sains et
                 revitalisés.
