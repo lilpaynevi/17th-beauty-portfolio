@@ -33,6 +33,12 @@
   color: #000;
 }
 
+.Banner {
+  background-image: url(https://res.cloudinary.com/wavy/image/upload/f_auto,q_auto,w_1366/v1734700998/production/shop-website-renderer/430897/65cf8f2…/banner-5ac83f75-f464-4efe-a776-2aaa60cf2c2a.bannercpid.jpg);
+  opacity: 0;
+  opacity: 1;
+}
+
 .bg-or {
   background-image: url("https://res.cloudinary.com/wavy/image/upload/v1641461956/dor%C3%A9-2.jpg");
   background-size: cover;
@@ -460,8 +466,8 @@ a.LinkPanel--button {
 
 .InfosShop p {
   line-height: 23px;
-  text-align: justify;
-  font-size: 14.5px;
+  text-align: center;
+  font-size: 17px;
   color: #87613d !important;
 }
 

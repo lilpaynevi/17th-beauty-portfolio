@@ -1,26 +1,27 @@
 import Image from "next/image";
-import {
-  Instagram,
-  BookText as TikTok,
-} from "lucide-react";
+import { Instagram } from "lucide-react";
 import "./page.css";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 import { comments } from "@/lib/utils";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import Header from "@/components/global/Header";
 import Navbar from "@/components/global/Navbar";
+import Footer from "@/components/global/Footer";
 export default function Home() {
-
+ 
   return (
     <div className="min-h-screen bg-neutral-50">
       {/* Navigation */}
-      <Navbar/>
+      <Navbar />
       <Header />
-      
+
       {/* Rest of the homepage content */}
       {/* ... (Keep the existing homepage content) ... */}
-      <div className="CustomMarkdown InfosShop">
-        <div className="CustomMarkdown--Cols col-1 InfosShop--Cols">
+      <div className="CustomMarkdown InfosShop mx-auto" style={{
+        marginLeft: '10%',
+        marginRight: '10%',
+      }}>
+        {/* <div className="CustomMarkdown--Cols col-1 InfosShop--Cols">
           <h3 className="text-4xl">17th beauty</h3>
           <span className="text-xl text-[#7b6a58]">
             Le salon de beauté parisien par excellence !
@@ -36,12 +37,12 @@ export default function Home() {
           </span>
           <div className="text-xl my-5">
             <span className="text-xl text-[#7b6a58] my-4">
-              <strong>17th Beauty</strong> est bien plus qu &lsquo; un simple{" "}
-              <strong>institut de beauté</strong>, c &lsquo; est un véritable temple
-              dédié à la sophistication et à l &lsquo; excellence ! Niché entre la
-              majestueuse <strong>place de Wagram</strong> et la charmante{" "}
-              <strong>porte d &lsquo; Asnières</strong> à proximité de l &lsquo; avenue des{" "}
-              <strong>Champs-Elysées</strong>. Cet{" "}
+              <strong>17th Beauty</strong> est bien plus qu&lsquo;un simple{" "}
+              <strong>institut de beauté</strong>, c&lsquo;est un véritable
+              temple dédié à la sophistication et à l&lsquo;excellence ! Niché
+              entre la majestueuse <strong>place de Wagram</strong> et la
+              charmante <strong>porte d&lsquo;Asnières</strong> à proximité de
+              l&lsquo;avenue des <strong>Champs-Elysées</strong>. Cet{" "}
               <strong>havre de beauté</strong> se trouve à quelques pas
               seulement{" "}
               <strong>
@@ -56,9 +57,10 @@ export default function Home() {
           <div className="text-xl text-[#7b6a58]">
             <p>
               <span className="text-xl text-[#7b6a58]">
-                C &lsquo; est ici, que <strong>Selma</strong> vous ouvre les portes d &lsquo; un
-                monde où la beauté est élevée au rang d &lsquo; art. Laissez-vous choyer
-                dans un cadre enchanteur, où chaque détail est pensé pour{" "}
+                C&lsquo;est ici, que <strong>Selma</strong> vous ouvre les
+                portes d&lsquo;un monde où la beauté est élevée au rang d
+                &lsquo;art. Laissez-vous choyer dans un cadre enchanteur, où
+                chaque détail est pensé pour{" "}
                 <strong>sublimer vos mains, vos pieds, vos cheveux</strong>...
               </span>
             </p>
@@ -68,29 +70,76 @@ export default function Home() {
               href="https://widget.treatwell.fr/salon/shay-beauty-2/"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-or p-6 rounded-lg shadow-sm text-center text-white hover:bg-[#87613d] transition"
+              className="bg-or px-11 py-4 rounded-lg shadow-sm text-center text-white hover:bg-[#87613d] transition"
             >
               RÉSERVER
             </a>
           </div>
-        </div>
+        </div> */}
+        <li className="CustomMarkdown--Cols col-1 InfosShop--Cols">
+          <h2>17th Beauty</h2>
+          <h4 className="my-4">Le salon de beauté parisien par excellence !</h4>
+          <p>
+            <Image
+              src="https://res.cloudinary.com/wavy/image/upload/f_auto,q_auto/v1667380977/golden_hr.svg"
+              alt="17th Beauty"
+              width={500}
+              height={100}
+            />
+          </p>
+          <pre className="hidden md:block">
+            <code className="my-4">
+              Vous cherchez un salon de coiffure à proximité de chez vous...
+            </code>
+          </pre>
+          <p className="my-4">
+            <strong>17th Beauty</strong> est bien plus qu'un simple{" "}
+            <strong>institut de beauté</strong>, c'est un véritable temple dédié
+            à la sophistication et à l'excellence ! Niché entre la majestueuse{" "}
+            <strong>place de Wagram</strong> et la charmante{" "}
+            <strong>porte d'Asnières</strong> à proximité de l'avenue des{" "}
+            <strong>Champs-Elysées</strong>. Cet{" "}
+            <strong>havre de beauté</strong> se trouve à quelques pas seulement{" "}
+            <strong>
+              des stations de métro Pont Cardinet (ligne 14) et Péreire
+              Levallois (lignes C et 3)
+            </strong>
+            , dans <strong>17e arrondissement de Paris</strong> pour vous faire
+            vivre une expérience esthétique inoubliable.
+          </p>
+          <p>
+            C'est ici, que <strong>Selma</strong> vous ouvre les portes d'un
+            monde où la beauté est élevée au rang d'art. Laissez-vous choyer
+            dans un cadre enchanteur, où chaque détail est pensé pour{" "}
+            <strong>sublimer vos mains, vos pieds, vos cheveux</strong>...
+          </p>
+          <h5>
+            <a
+              href="https://widget.treatwell.fr/salon/shay-beauty-2/?utm_source=partner&amp;amp;utm_medium=salon-site-embedded-book-now-widget"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              RÉSERVER
+            </a>
+          </h5>
+        </li>
       </div>
 
-      <div style={{ width: '100%', position: 'relative', height: '300px' }}>
+      <div style={{ width: "100%", position: "relative", height: "300px" }}>
         <Image
           src="https://res.cloudinary.com/wavy/image/upload/f_auto,q_auto/v1709107552/SHAY_BEAUTY_bandeau_contenu.jpg"
           alt="17th Beauty"
           fill
-          style={{ objectFit: 'cover' }}
+          style={{ objectFit: "cover" }}
         />
       </div>
       <ul className="CustomMarkdown--Cols col-1 text-[#7b6a58]">
-        <li className="CustomMarkdown--Col my-8">
+        <li className="CustomMarkdown--Cols my-8 justify-start">
           <p>
-            Laissez-vous enchanter par un univers de raffinement et d &lsquo; élégance
-            contemporaine, où le marbre s &lsquo; associe à une ambiance raffinée pour
-            un moment de beauté mémorable. Un espace où chaque trait est
-            méticuleusement façonné,{" "}
+            Laissez-vous enchanter par un univers de raffinement et d&lsquo;
+            élégance contemporaine, où le marbre s&lsquo;associe à une ambiance
+            raffinée pour un moment de beauté mémorable. Un espace où chaque
+            trait est méticuleusement façonné,{" "}
             <strong>
               chaque cheveu est sublimé, chaque regard magnifié, et chaque souci
               esthétique
@@ -98,12 +147,12 @@ export default function Home() {
             résolu avec une précision experte !
           </p>
           <p>
-            Être belle jusqu &lsquo; au bout des ongles, c &lsquo; est ce que vous propose
-            l &lsquo; équipe <strong>17th Beauty</strong>&nbsp;! Explorez une palette de
-            services exquis, allant de{" "}
+            Être belle jusqu&lsquo;au bout des ongles, c&lsquo;est ce que vous
+            propose l&lsquo;équipe <strong>17th Beauty</strong>&nbsp;! Explorez
+            une palette de services exquis, allant de{" "}
             <strong>
-              l &lsquo; onglerie, la manucure et la pédicure au maquillage, en passant
-              par le lissage et les soins capillaires
+              l&lsquo;onglerie, la manucure et la pédicure au maquillage, en
+              passant par le lissage et les soins capillaires
             </strong>
             , pour une chevelure lisse et éclatante de santé.
           </p>
@@ -112,23 +161,23 @@ export default function Home() {
             <strong>
               des prothésistes ongulaires et esthéticiennes polyvalentes
             </strong>
-            &nbsp;dans un lieu où l &lsquo; on se sent bien&nbsp;!
+            &nbsp;dans un lieu où l&lsquo;on se sent bien&nbsp;!
           </p>
         </li>
       </ul>
-      <div className="flex flex-col xl:grid xl:grid-cols-2 m-6 xl:m-24 xl:grid-flow-col justify-center items-center gap-6">
-        <div className="m-3 text-center">
+      <div className="flex flex-col xl:grid xl:grid-cols-2 m-6 xl:m-24 xl:grid-flow-col items-center align-middle justify-start  gap-6">
+        <div className="m-3 text-center h-max">
           <h3 className="text-4xl">17th beauty</h3>
           <h4
             style={{
               fontSize: "16px",
               letterSpacing: "5px",
               fontWeight: 100,
-              marginTop: "19px",
+              marginTop: "130px",
               lineHeight: "33px",
               color: "#cbbba1",
               textAlign: "center",
-              fontFamily: " &lsquo; Rubik &lsquo; , sans-serif",
+              fontFamily: "&lquo; Rubik&lsquo;, sans-serif",
               textTransform: "uppercase",
             }}
           >
@@ -167,30 +216,30 @@ export default function Home() {
                 href="https://widget.treatwell.fr/salon/shay-beauty-2/?utm_source=partner&amp;amp;utm_medium=salon-site-embedded-book-now-widget"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-or p-6 rounded-lg shadow-sm text-center text-white hover:bg-[#87613d] transition"
+                className="bg-or px-11 py-4 rounded-lg shadow-sm text-center text-white hover:bg-[#87613d] transition"
               >
                 RÉSERVER
               </a>
             </div>
           </h5>
-          <p>
+          <div className="flex justify-center my-8 py-14">
             <Image
               src="https://res.cloudinary.com/wavy/image/upload/f_auto,q_auto/v1708596973/-Shay_Beauty-Shay_Beauty.jpg"
               alt="17th Beauty"
               width={500}
               height={100}
             />
-          </p>
+          </div>
         </div>
-        <div className="m-3 text-start">
-          <p>
+        <div className="m-3  text-start">
+          <div className="flex justify-center">
             <Image
               src="https://res.cloudinary.com/wavy/image/upload/f_auto,q_auto/v1708597500/Shay_Beauty-Shay_Beauty.jpg"
               alt="Shay Beauty"
               width={500}
               height={100}
             />
-          </p>
+          </div>
           <h3 className="text-4xl text-center m-6">
             Salon de coiffure champs Élysées
           </h3>
@@ -203,13 +252,13 @@ export default function Home() {
               lineHeight: "33px",
               color: "#cbbba1",
               textAlign: "center",
-              fontFamily: " &lsquo; Rubik &lsquo; , sans-serif",
+              fontFamily: "&lquo; Rubik&lsquo;, sans-serif",
               textTransform: "uppercase",
             }}
           >
             Coupe, colortion, mèches, balayages...
           </h4>
-          <div className="mx-12">
+          <div className="mx-12 text-sm">
             <p className="my-4">
               Les prestations capillaires incluent également :
             </p>
@@ -251,7 +300,7 @@ export default function Home() {
                   href="https://widget.treatwell.fr/salon/shay-beauty-2/?utm_source=partner&amp;amp;utm_medium=salon-site-embedded-book-now-widget"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-or p-6 rounded-lg shadow-sm text-center text-white hover:bg-[#87613d] transition"
+                  className="bg-or px-11 py-4 rounded-lg shadow-sm text-center text-white hover:bg-[#87613d] transition"
                 >
                   RÉSERVER
                 </a>
@@ -330,13 +379,13 @@ export default function Home() {
       </div>
       <ul className="CustomMarkdown--Cols col-1">
         <li className="InfosShop">
-          <p>
+          <p className="text-xl">
             Venez chouchouter vos <strong>ongles</strong> chez{" "}
             <strong>17th Beauty</strong> et découvrez un espace onglerie où{" "}
             <strong>une multitude de nuances de vernis semi-permanent</strong>{" "}
             vous attendent ! Laissez-vous choyer avec la célèbre{" "}
             <strong>manucure russe</strong>, qui prend soin de vos ongles en les
-            nourrissant et en les préparant avec soin avant l &lsquo; application{" "}
+            nourrissant et en les préparant avec soin avant l&lsquo; application{" "}
             <strong>de gel ou de chablon</strong>. Quelle que soit votre envie,
             ici, on vous propose <strong>le nail art</strong>,{" "}
             <strong>la french classique</strong>,{" "}
@@ -349,9 +398,9 @@ export default function Home() {
             toutes les fantaisies sont possibles !
           </p>
           <p>
-            C &lsquo; est ici, que Selma vous ouvre les portes d &lsquo; un monde où la beauté
-            est élevée au rang d &lsquo; art. Laissez-vous choyer dans un cadre
-            enchanteur, où chaque détail est pensé pour{" "}
+            C&lsquo;est ici, que Selma vous ouvre les portes d&lsquo;un monde où
+            la beauté est élevée au rang d&lsquo;art. Laissez-vous choyer dans
+            un cadre enchanteur, où chaque détail est pensé pour{" "}
             <strong>sublimer vos mains, vos pieds, vos cheveux</strong>...
           </p>
           <div className="my-11 w-full">
@@ -359,7 +408,7 @@ export default function Home() {
               href="https://widget.treatwell.fr/salon/shay-beauty-2/?utm_source=partner&amp;amp;utm_medium=salon-site-embedded-book-now-widget"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-or p-6 rounded-lg shadow-sm text-center text-white hover:bg-[#87613d] transition"
+              className="bg-or px-11 py-4 rounded-lg shadow-sm text-center text-white hover:bg-[#87613d] transition"
             >
               RÉSERVER
             </a>
@@ -373,11 +422,11 @@ export default function Home() {
               lineHeight: "33px",
               color: "#cbbba1",
               textAlign: "center",
-              fontFamily: " &lsquo; Rubik &lsquo; , sans-serif",
+              fontFamily: "&lquo; Rubik&lsquo;, sans-serif",
               textTransform: "uppercase",
             }}
           >
-            Laissez-vous aller, le temps d &lsquo; une parenthèse de douceur chez{" "}
+            Laissez-vous aller, le temps d&lsquo;une parenthèse de douceur chez{" "}
             <strong>17th Beauty</strong>. Ici, chaque visite est une expérience
             beauté personnalisée !
           </h4>
@@ -396,10 +445,10 @@ export default function Home() {
           </p>
           <p>
             La marque <strong>Daisy DND</strong> est une entreprise spécialisée
-            dans la création de produits de beauté naturels et respectueux de
-            l &lsquo; environnement. Elle propose une gamme variée de cosmétiques, de
-            soins du visage et du corps, et de parfums, tous fabriqués à partir
-            d &lsquo; ingrédients d &lsquo; origine végétale.
+            dans la création de produits de beauté naturels et respectueux de l
+            &lsquo;environnement. Elle propose une gamme variée de cosmétiques,
+            de soins du visage et du corps, et de parfums, tous fabriqués à
+            partir d&lsquo;ingrédients d&lsquo;origine végétale.
           </p>
         </li>
         <li className="CustomMarkdown--Col m-4">
@@ -483,7 +532,7 @@ export default function Home() {
             lineHeight: "33px",
             color: "#cbbba1",
             textAlign: "center",
-            fontFamily: " &lsquo; Rubik &lsquo; , sans-serif",
+            fontFamily: "&lquo; Rubik&lsquo;, sans-serif",
             textTransform: "uppercase",
           }}
         >
@@ -553,45 +602,7 @@ export default function Home() {
       </div>
 
       {/* Footer */}
-      <footer className="bg-black text-white py-12 px-8 ">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div>
-            <h3 className="text-2xl font-serif mb-4">17th Beauty</h3>
-            <p className="text-gray-400">
-              Votre destination beauté au cœur de Paris
-            </p>
-          </div>
-          <div>
-            <h4 className="font-semibold mb-4">Horaires d &lsquo; ouverture</h4>
-            <ul className="space-y-2 text-gray-400">
-              <li>Lundi - Vendredi: 10h - 19h</li>
-              <li>Samedi: 10h - 19h</li>
-              <li>Dimanche: Fermé</li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-semibold mb-4">Suivez-nous</h4>
-            <div className="flex gap-4">
-              <a
-                href="https://www.instagram.com/17th_beauty"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white hover:text-[#7b6a58] transition"
-              >
-                <Instagram className="w-6 h-6" />
-              </a>
-              <a
-                href="https://www.tiktok.com/@17th_beauty"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white hover:text-[#7b6a58] transition"
-              >
-                <TikTok className="w-6 h-6" />
-              </a>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

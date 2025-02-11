@@ -1,0 +1,324 @@
+{
+  "categories": [
+    {
+      "name": "Femme - Coupe de cheveux et coiffure",
+      "services": [
+        {
+          "name": "Brushing (toutes longueurs)",
+          "price": 25.00,
+          "duration": "25 min"
+        },
+        {
+          "name": "Brushing, Shampoing, Soin (toutes longueurs)",
+          "price": 32.95,
+          "duration": "35 min"
+        },
+        {
+          "name": "Coupe Pointe (toutes longueurs, avec shampoing, hors brushing)",
+          "price": 11.90,
+          "duration": "15 min"
+        },
+        {
+          "name": "Coupe dégradé toutes longueurs hors brushing",
+          "price": 17.90,
+          "duration": "25 min"
+        },
+        {
+          "name": "Couleur racine (brushing inclus)",
+          "variants": [
+            {
+              "name": "Cheveux courts",
+              "price": 49.90,
+              "duration": "40 min"
+            },
+            {
+              "name": "Cheveux mi-longs",
+              "price": 59.90,
+              "duration": "50 min"
+            },
+            {
+              "name": "Cheveux longs",
+              "price": 69.90,
+              "duration": "60 min"
+            }
+          ]
+        },
+        {
+          "name": "Couleur tête entière (brushing inclus)",
+          "variants": [
+            {
+              "name": "Cheveux courts",
+              "price": 69.90,
+              "duration": "55 min"
+            },
+            {
+              "name": "Cheveux mi-longs",
+              "price": 79.90,
+              "duration": "65 min"
+            },
+            {
+              "name": "Cheveux longs",
+              "price": 89.90,
+              "duration": "75 min"
+            }
+          ]
+        },
+        {
+          "name": "Mèche (brushing inclus)",
+          "variants": [
+            {
+              "name": "Cheveux courts",
+              "price": 119.90,
+              "duration": "75 min"
+            },
+            {
+              "name": "Cheveux mi-longs",
+              "price": 149.90,
+              "duration": "80 min"
+            },
+            {
+              "name": "Cheveux longs",
+              "price": 179.90,
+              "duration": "90 min"
+            }
+          ]
+        },
+        {
+          "name": "Ombre hair & Balayage",
+          "variants": [
+            {
+              "name": "Cheveux courts",
+              "price": 119.90,
+              "duration": "70 min"
+            },
+            {
+              "name": "Cheveux mi-longs",
+              "price": 149.90,
+              "duration": "80 min"
+            },
+            {
+              "name": "Cheveux longs",
+              "price": 179.90,
+              "duration": "90 min"
+            }
+          ]
+        },
+        {
+          "name": "Lissage organique",
+          "variants": [
+            {
+              "name": "Cheveux courts",
+              "price": 119.90,
+              "duration": "60 min"
+            },
+            {
+              "name": "Cheveux mi-longs",
+              "price": 149.90,
+              "duration": "60 min"
+            },
+            {
+              "name": "Cheveux longs",
+              "price": 179.90,
+              "duration": "60 min"
+            }
+          ]
+        },
+        {
+          "name": "Patine (Brushing inclus)",
+          "variants": [
+            {
+              "name": "Cheveux courts",
+              "price": 54.90,
+              "duration": "80 min"
+            },
+            {
+              "name": "Cheveux mi-longs",
+              "price": 64.90,
+              "duration": "80 min"
+            },
+            {
+              "name": "Cheveux longs",
+              "price": 74.90,
+              "duration": "80 min"
+            }
+          ]
+        },
+        {
+          "name": "Soin Tokio Inkarami",
+          "variants": [
+            {
+              "name": "Cheveux courts",
+              "price": 129.90,
+              "duration": "60 min"
+            },
+            {
+              "name": "Cheveux mi-longs",
+              "price": 159.90,
+              "duration": "60 min"
+            },
+            {
+              "name": "Cheveux longs",
+              "price": 189.90,
+              "duration": "60 min"
+            }
+          ]
+        },
+        {
+          "name": "Soin B0T0X",
+          "variants": [
+            {
+              "name": "Cheveux courts",
+              "price": 89.90,
+              "duration": "60 min"
+            },
+            {
+              "name": "Cheveux mi-longs",
+              "price": 99.90,
+              "duration": "60 min"
+            },
+            {
+              "name": "Cheveux longs",
+              "price": 109.90,
+              "duration": "60 min"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Manucure",
+      "services": [
+        {
+          "name": "Vernis simple",
+          "price": 15.00,
+          "duration": "25 min"
+        },
+        {
+          "name": "Manucure russe",
+          "price": 20.00,
+          "duration": "20 min"
+        },
+        {
+          "name": "Pose de vernis simple + Manucure express",
+          "price": 22.00,
+          "duration": "30 min"
+        },
+        {
+          "name": "Beauté des mains et pose de vernis semi-permanent",
+          "price": 40.00,
+          "duration": "30 min"
+        },
+        {
+          "name": "Pose de vernis semi-permanent",
+          "price": 25.00,
+          "duration": "15 min"
+        },
+        {
+          "name": "Capsule + Gel + Vernis semi permanent",
+          "price": 60.00,
+          "duration": "90 min"
+        },
+        {
+          "name": "Gainage et pose de vernis semi-permanent",
+          "price": 50.00,
+          "duration": "75 min"
+        },
+        {
+          "name": "Pose d'ongles avec chablon + Vernis semi permanent",
+          "price": 80.00,
+          "duration": "90 min"
+        },
+        {
+          "name": "Manucure express",
+          "price": 10.00,
+          "duration": "15 min"
+        }
+      ]
+    },
+    {
+      "name": "Supplement",
+      "services": [
+        {
+          "name": "Supplément French",
+          "price": 10.00,
+          "duration": "15 min"
+        },
+        {
+          "name": "Nail Art",
+          "variants": [
+            {
+              "name": "Strass",
+              "price": 2.00,
+              "duration": "5 min"
+            },
+            {
+              "name": "Nail Art (par doigt)",
+              "price": 3.00,
+              "duration": "5 min"
+            },
+            {
+              "name": "Nail art (10 doigts)",
+              "price": 20.00,
+              "duration": "10 min"
+            }
+          ]
+        },
+        {
+          "name": "Supplement Chrome",
+          "price": 15.00,
+          "duration": "10 min"
+        },
+        {
+          "name": "Dépose complète",
+          "price": 15.00,
+          "duration": "15 min"
+        },
+        {
+          "name": "Dépose de vernis semi-permanent",
+          "price": 10.00,
+          "duration": "20 min"
+        },
+        {
+          "name": "Remplissage",
+          "price": 45.00,
+          "duration": "50 min"
+        },
+        {
+          "name": "Baby Boomer",
+          "price": 15.00,
+          "duration": "15 min"
+        },
+        {
+          "name": "Design Chrome",
+          "price": 15.00,
+          "duration": "10 min"
+        }
+      ]
+    },
+    {
+      "name": "Beauté des pieds",
+      "services": [
+        {
+          "name": "Pose de vernis simple sur les pieds",
+          "price": 20.00,
+          "duration": "30 min"
+        },
+        {
+          "name": "Pose de vernis semi-permanent sur les pieds",
+          "price": 30.00,
+          "duration": "35 min"
+        },
+        {
+          "name": "Beauté des pieds et Vernis simple",
+          "price": 40.00,
+          "duration": "40 min"
+        },
+        {
+          "name": "Beauté des pieds et pose de vernis semi-permanent",
+          "price": 50.00,
+          "duration": "40 min"
+        }
+      ]
+    }
+  ]
+}
