@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Instagram } from "lucide-react";
 import "./page.css";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 import { comments } from "@/lib/utils";
@@ -10,7 +9,7 @@ import Footer from "@/components/global/Footer";
 export default function Home() {
  
   return (
-    <div className="min-h-screen bg-neutral-50">
+    <div className="min-h-screen bg-neutral-50 max-w-max">
       {/* Navigation */}
       <Navbar />
       <Header />
@@ -93,11 +92,11 @@ export default function Home() {
             </code>
           </pre>
           <p className="my-4">
-            <strong>17th Beauty</strong> est bien plus qu'un simple{" "}
-            <strong>institut de beauté</strong>, c'est un véritable temple dédié
-            à la sophistication et à l'excellence ! Niché entre la majestueuse{" "}
+            <strong>17th Beauty</strong> est bien plus qu&apos;un simple{" "}
+            <strong>institut de beauté</strong>, c&apos;est un véritable temple dédié
+            à la sophistication et à l&apos;excellence ! Niché entre la majestueuse{" "}
             <strong>place de Wagram</strong> et la charmante{" "}
-            <strong>porte d'Asnières</strong> à proximité de l'avenue des{" "}
+            <strong>porte d&apos;Asnières</strong> à proximité de l&apos;avenue des{" "}
             <strong>Champs-Elysées</strong>. Cet{" "}
             <strong>havre de beauté</strong> se trouve à quelques pas seulement{" "}
             <strong>
@@ -108,8 +107,8 @@ export default function Home() {
             vivre une expérience esthétique inoubliable.
           </p>
           <p>
-            C'est ici, que <strong>Selma</strong> vous ouvre les portes d'un
-            monde où la beauté est élevée au rang d'art. Laissez-vous choyer
+            C&apos;est ici, que <strong>Selma</strong> vous ouvre les portes d&apos;un
+            monde où la beauté est élevée au rang d&apos;art. Laissez-vous choyer
             dans un cadre enchanteur, où chaque détail est pensé pour{" "}
             <strong>sublimer vos mains, vos pieds, vos cheveux</strong>...
           </p>

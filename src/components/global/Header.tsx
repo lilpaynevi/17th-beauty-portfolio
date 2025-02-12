@@ -8,10 +8,12 @@ export default function Header() {
     <div>
       <header className="relative h-[680px]">
         <div className="absolute inset-0  ">
-          <img
+          <Image
             src="https://res.cloudinary.com/wavy/image/upload/f_auto,q_auto,w_1366/v1734700998/production/shop-website-renderer/430897/65cf8f2bfce28bd6055aec54/banner-5ac83f75-f464-4efe-a776-2aaa60cf2c2a.bannercpid.jpg"
             alt="17th Beauty"
             className="w-full h-[680px] object-cover"
+            width={500}
+            height={300}
           />
           <div className="absolute inset-0 bg-black/40"></div>
         </div>

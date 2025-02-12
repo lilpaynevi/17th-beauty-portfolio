@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import { Instagram } from "lucide-react";
 import "@/app/page.css";
 
