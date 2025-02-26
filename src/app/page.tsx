@@ -76,7 +76,7 @@ export default function Home() {
           </div>
         </div> */}
         <li className="CustomMarkdown--Cols col-1 InfosShop--Cols">
-          <h2>17th Beauty</h2>
+          <h2>17TH BEAUTY</h2>
           <h4 className="my-4">Le salon de beauté parisien par excellence !</h4>
           <p>
             <Image
@@ -166,13 +166,13 @@ export default function Home() {
       </ul>
       <div className="flex flex-col xl:grid xl:grid-cols-2 m-6 xl:m-24 xl:grid-flow-col items-center align-middle justify-start  gap-6">
         <div className="m-3 text-center h-max">
-          <h3 className="text-4xl">17th beauty</h3>
+          <h3 className="text-3xl">17TH BEAUTY</h3>
           <h4
             style={{
               fontSize: "16px",
               letterSpacing: "5px",
               fontWeight: 100,
-              marginTop: "130px",
+              marginTop: "60px",
               lineHeight: "33px",
               color: "#cbbba1",
               textAlign: "center",
@@ -596,7 +596,7 @@ export default function Home() {
         /> */}
         <div className="h-[40rem] rounded-md flex flex-col antialiased  dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
           <TextGenerateEffect words={"Nos avis Google"} />;
-          <InfiniteMovingCards items={comments} direction="right" />
+          <InfiniteMovingCards speed="slow" items={comments} direction="right" />
         </div>
       </div>
 
