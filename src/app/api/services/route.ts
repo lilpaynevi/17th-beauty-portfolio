@@ -1,6 +1,14 @@
 import { NextResponse } from "next/server";
 import puppeteer from "puppeteer";
 
+type Service = {
+  category: string;
+  name: string;
+  duration: string;
+  price: string;
+  description: string;
+};
+
 export async function GET() {
   let browser;
 
@@ -20,22 +28,33 @@ export async function GET() {
     });
 
     await page.evaluate(() => {
-      document.body.style.transform = "scale(0.05)"; 
+      document.body.style.transform = "scale(0.05)";
       document.body.style.transformOrigin = "0 0";
-      document.documentElement.style.overflow = "hidden"; 
+      document.documentElement.style.overflow = "hidden";
     });
 
     await page.waitForSelector('[data-testid="virtuoso-item-list"]');
 
     const services = await page.evaluate(() => {
-      const results = [];
+      const results: Service[] = [];
       const container = document.querySelector(
         '[data-testid="virtuoso-item-list"]'
       );
 
-      container.querySelectorAll("[data-item-index]").forEach((item) => {
-        const categoryElement = item.querySelector('.font-default-header-s-semibold');
-        console.log("🚀 ~ container.querySelectorAll ~ categoryElement:", categoryElement)
+      if (!container) {
+        console.error("Le conteneur des services n'a pas été trouvé.");
+        return results;
+      }
+
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      container.querySelectorAll("[data-item-index]").forEach((item: any) => {
+        const categoryElement = item.querySelector(
+          ".font-default-header-s-semibold"
+        );
+        console.log(
+          "🚀 ~ container.querySelectorAll ~ categoryElement:",
+          categoryElement
+        );
         const category = categoryElement
           ? categoryElement.innerText.trim()
           : "Sans catégorie";
@@ -53,7 +72,6 @@ export async function GET() {
           .querySelector('[data-qa="offer-item-description"]')
           ?.innerText.trim();
 
-          
         if (name && duration && price) {
           results.push({
             category,

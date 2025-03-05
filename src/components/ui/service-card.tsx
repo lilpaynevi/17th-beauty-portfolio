@@ -5,6 +5,14 @@ import "@/app/page.css";
 import "@/app/service.css";
 // import servicesData from "@/../services-data.json";
 
+type Service = {
+  category: string;
+  name: string;
+  duration: string;
+  price: string;
+  description: string;
+};
+
 const ServiceCard = () => {
   const [servicesData, setServices] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -48,7 +56,8 @@ const ServiceCard = () => {
         {loading ? (
           <LoadingSpinner />
         ) : (
-          servicesData.map((service, categoryIndex) => (
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          servicesData.map((service: Service, categoryIndex) => (
             <div key={categoryIndex} className="mb-8">
               <div className="space-y-6">
                 <div
