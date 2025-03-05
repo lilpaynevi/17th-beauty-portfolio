@@ -6,16 +6,13 @@ import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import Header from "@/components/global/Header";
 import Navbar from "@/components/global/Navbar";
 import Footer from "@/components/global/Footer";
+
 export default function Home() {
- 
   return (
     <div className="min-h-screen bg-neutral-50 max-w-max">
-      {/* Navigation */}
       <Navbar />
       <Header />
 
-      {/* Rest of the homepage content */}
-      {/* ... (Keep the existing homepage content) ... */}
       <div className="CustomMarkdown InfosShop mx-auto" style={{
         marginLeft: '10%',
         marginRight: '10%',
@@ -604,4 +601,5 @@ export default function Home() {
       <Footer />
     </div>
   );
+          console.log("🚀 ~ Home ~ process.env.NEXT_URL:", process.env.NEXT_URL)
 }

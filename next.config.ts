@@ -12,6 +12,10 @@ const nextConfig: NextConfig = {
       }
     ],
   },
+  env: {
+    customKey: 'my-value',
+    NEXT_PUBLIC_API_URL: 'https://17thbeauty.netlify.app'
+  },
 };
 
 export default nextConfig;

@@ -9,9 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/env": "^15.2.1",
     "@tabler/icons-react": "^3.28.1",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "dotenv": "^16.4.7",
     "flowbite": "^2.5.2",
     "framer-motion": "^11.18.1",
     "lucide-react": "^0.473.0",

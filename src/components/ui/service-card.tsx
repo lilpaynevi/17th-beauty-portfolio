@@ -20,7 +20,7 @@ const ServiceCard = () => {
   const fetchServices = async () => {
     try {
       setLoading(true);
-      const response = await fetch("http://localhost:3000/api/services");
+      const response = await fetch(process.env.API_URL + "/api/services");
 
       if (!response.ok) {
         throw new Error(`Erreur HTTP ! Statut : ${response.status}`);
