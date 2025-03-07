@@ -47,18 +47,31 @@ export default function Header() {
           </div>
         </div>
         <div className="bg-white px-6 py-4 xl:py-0 rounded-lg shadow-sm flex items-center gap-4">
-          <MapPin className="w-6 h-6 text-[#7b6a58]" />
-          <div>
-            {/* <p className="font-medium">Adresse</p> */}
-            <p className="text-sm text-gray-900">
-              196 Boulevard Malesherbes, 75017 Paris
-            </p>
-          </div>
+        <MapPin className="w-6 h-6 text-[#7b6a58]" />
+         
+          <a
+            href="https://maps.google.com/?q=196+Boulevard+Malesherbes,+75017+Paris"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Voir l'adresse sur Google Maps: 196 Boulevard Malesherbes, 75017 Paris"
+          >
+            <div>
+              <p className="text-sm text-gray-900 hover:text-[#7b6a58] hover:underline">
+                196 Boulevard Malesherbes, 75017 Paris
+              </p>
+            </div>
+          </a>
         </div>
-        <div className="bg-white px-6  py-4 xl:py-0 rounded-lg shadow-sm flex items-center gap-4">
+        <div className="bg-white p-6 rounded-lg shadow-sm flex items-center gap-4 hover:bg-gray-50 transition-colors">
           <Phone className="w-6 h-6 text-[#7b6a58]" />
           <div>
-            <p className="text-sm text-gray-900">07 82 49 69 08</p>
+            <a
+              href="tel:0782496908"
+              className="text-sm text-gray-600 hover:text-[#7b6a58] hover:underline"
+              aria-label="Appeler le 07 82 49 69 08"
+            >
+              07 82 49 69 08
+            </a>
           </div>
         </div>
         <a

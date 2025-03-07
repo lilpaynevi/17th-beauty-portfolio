@@ -36,7 +36,15 @@ export default function Footer() {
         <div>
           <h4 className="font-semibold mb-4">Téléphone</h4>
           <ul className="space-y-2 text-gray-400">
-            <li>07 82 49 69 08</li>
+            <li>
+              <a
+                href="tel:0782496908"
+                className="text-sm text-gray-600 hover:text-[#7b6a58] hover:underline"
+                aria-label="Appeler le 07 82 49 69 08"
+              >
+                07 82 49 69 08
+              </a>
+            </li>
           </ul>
         </div>
         <div>
