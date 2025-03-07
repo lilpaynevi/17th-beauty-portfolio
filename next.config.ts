@@ -5,16 +5,25 @@ const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
       {
-        hostname: 'cdn1.treatwell.net',
+        hostname: "cdn1.treatwell.net",
       },
       {
-        hostname: 'res.cloudinary.com'
-      }
+        hostname: "res.cloudinary.com",
+      },
     ],
   },
+  publicRuntimeConfig: {
+    NEXT_PUBLIC_API_URL:
+      process.env.NODE_ENV === "production"
+        ? "https://17thbeauty.netlify.app"
+        : "http://localhost:3001",
+  },
   env: {
-    customKey: 'my-value',
-    NEXT_PUBLIC_API_URL: 'https://17thbeauty.netlify.app'
+    customKey: "my-value",
+    NEXT_PUBLIC_API_URL:
+      process.env.NODE_ENV === "production"
+        ? "https://17thbeauty.netlify.app"
+        : "http://localhost:3001",
   },
 };
 
