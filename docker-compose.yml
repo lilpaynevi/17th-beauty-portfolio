@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  nextjs-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules  # Ignore ceux du host
+    command: npm run dev
+    environment:
+      - NODE_ENV=production
